@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="profile" content="https://github.com/codeOchoa">
+    <meta name="copyright" content="codeOchoa">
+    <meta name="description" content="Instalación y mantenimiento de sistemas de energía solar para hogares y pequeñas empresas.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="#">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/logoSolarFlow.svg">
+    <title>SolarFlow</title>
+</head>
+<body class="index-body">
+    <header class="index-header">
+        <div id="nav"></div>
+        <script>
+            fetch("/includes/nav.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("nav").innerHTML = data);
+        </script>
+    </header>
+    <main>
+    </main>
+    <footer>
+        <div id="footer"></div>
+        <script>
+            fetch("/includes/footer.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("footer").innerHTML = data);
+        </script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
