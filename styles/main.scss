@@ -1,6 +1,5 @@
 @import "./reset.css";
 @import "./normalize.css";
-@import "./base.scss";
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 @import "../../node_modules/aos/dist/aos.css";
@@ -8,6 +7,10 @@
 @font-face {
     font-family: "Josefin Sans";
     src: url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,12 +26,16 @@ body {
 
 // Navbar
 
+.navbar {
+    position: sticky !important;
+}
+
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.card-body2 {
+.card-body-m {
     color: var(--bs-card-color);
     flex: 1 1 auto;
     margin: 0 0.5rem 0 0;
@@ -47,6 +54,20 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+// Cart
+
+.items-body {
+    padding: 10%
+}
+
+.h4-body-m {
+    color: #ef4423;
+}
+
+.h4-body-m  {
+    color: limegreen;
+}
+
 // Footer
 
 #img-footer {
@@ -55,6 +76,10 @@ body {
     width: 47px;
 }
 
-.text-center {
+.txt-deco-m {
+    text-decoration: none;
+}
+
+.text-center-m {
     background-color: rgba(0, 0, 0, 0.2);
 }

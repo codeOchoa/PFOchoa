@@ -5,30 +5,344 @@
     <meta charset="UTF-8">
     <meta name="profile" content="https://github.com/codeOchoa">
     <meta name="copyright" content="codeOchoa">
-    <meta name="description" content="Tienda artesanal de cerámica.">
+    <meta name="description" content="Tienda especializada en cerámica y velas de soja aromaticas.">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"> -->
-    <link rel="stylesheet" href="../../assets/css/main.css">
-    <link rel="icon" href="../../assets/images/logo.png">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" href="../assets/img/logo.png">
     <title>Malec</title>
 </head>
 
 <body>
     <header>
-        <div id="navbard"></div>
+        <!-- Nav mobile -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html">Malec</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="../index.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../index.html">Ver todos los productos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Sale</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Tazas</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Accesorios</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Colecciones</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Gift card</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Ofertas</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Preventa</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../index.html">Envio gratis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">¿Quienes somos?</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="./contact.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./contact.html">Localizar mi prodcuto</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./contact.html">Cambio de artículos</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="./contact.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Nav desktop -->
+                <div class="ms-auto d-flex align-items-center">
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body-m">
+                            <form class="d-flex search-form">
+                                <input class="form-control" type="search" placeholder="Search" aria-expanded="false"
+                                    aria-label="Search">
+                            </form>
+                            <div class="dropdown">
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">*Links resultados de busqueda interna*</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-dark me-2 d-none d-lg-inline-block" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <form class="d-flex me-0 mb-0 mb-lg-0 ms-lg-0">
+                        <a class="btn btn-outline-dark me-0 d-none d-lg-inline-block" href="./pages/cart.html" target="_self" type="submit">
+                            <i class="bi-cart-fill me-0"></i>
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </a>
+                    </form>
+                    <button class="btn btn-outline-dark d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <i class="bi bi-list" id="offcanvasWithBothOptionsLabel"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                            <form class="d-flex search-form" id="offcanvasWithBothOptionsLabel">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 d-lg-none d-lg-flex">
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="../index.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="../index.html">Ver todos los productos</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Sale</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Tazas</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Accesorios</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Colecciones</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Gift card</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Ofertas</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Preventa</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="../index.html">Envio gratis</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./about.html">¿Quienes somos?</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="./contact.html" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./contact.html">Localizar mi prodcuto</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./contact.html">Cambio de artículos</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li><a class="dropdown-item" href="./contact.html">Preguntas frecuentes</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex me-3 mb-0 mb-lg-0 ms-lg-0">
+                                <a class="btn btn-outline-dark me-0 d-lg-none" href="./pages/cart.html" target="_self" type="submit">
+                                    <i class="bi-cart-fill me-1"></i>
+                                    Cart
+                                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <article>
-        </article>
-        <section class="py-5">
-        </section>
+        <div class="container my-3 my-sm-5">
+            <h1 class="mb-sm-4 text-center">Contact</h1>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h4>Address:</h4>
+                    <address>
+                        <strong>BIET, Jhansi</strong><br />
+                        Panchawati Hostel<br />
+                        Jhansi, Uttar Pradesh<br />
+                        <abbr title="Telephone">T:</abbr><a href="tel:+919721304421">+91-9876543210</a><br />
+                        <abbr title="Mail">M:</abbr><a href="mailto:info@domain.com">info@domain.com</a>
+                    </address>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h4>Opening hours:</h4>
+                    <p>
+                        Mon-Sat:<span class="float-right"> 9 am - 4 pm</span><br />
+                        Sunday:<span class="float-right"> Off</span><br />
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-3">
+                    <h4>Send us a message</h4>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Name" required />
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="name">Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="example@email.com"
+                                        required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="telephone">Telephone</label>
+                                    <input type="tel" id="telephone" class="form-control" placeholder="9876543210"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="select">Department:</label>
+                                    <select id="select" class="form-control" aira-describedby="select-helpBlock"
+                                        required>
+                                        <option value="">- select here -</option>
+                                        <option value="business">Business</option>
+                                        <option value="Sale">Sale</option>
+                                        <option value="Support">Support</option>
+                                    </select>
+                                    <small id="select-helpBlock" class="form-text">Please select the recipient of your
+                                        message.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea">Message:</label>
+                            <textarea id="textarea" class="form-control" rows="5"
+                                placeholder="Write your message here.." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h4>Where to find us:</h4>
+                    <div class="embed embed-responsive-4by3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.376113531558!2d78.63823701454498!3d25.45911358377501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39777701fa29d96b%3A0x274c37abc80c1ad1!2sB.I.E.T!5e0!3m2!1sen!2sin!4v1513400712400"
+                            width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <div id="footer"></div>
+    <!-- Footer -->
+    <footer class="footer text-center bg-dark text-white p-4">
+        <div class="container">
+            <section class="mt-5">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="../index.html" class="txt-deco-m text-white">Inicio</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="../index.html" class="txt-deco-m text-white">Productos</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./about.html" class="txt-deco-m text-white">¿Quienes somos?</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="./contact.html" class="txt-deco-m text-white">Contacto</a>
+                        </h6>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-5" />
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            Empresa especializada en cerámica, velas de soja aromaticas y con el mejor precio y calidad del mercado.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center mb-5">
+                <a href="https://www.facebook.com/profile.php?id=100091698780289" class="txt-deco-m text-white me-4">
+                    <i class="bi bi-facebook-f"></i>
+                </a>
+                <a href="https://x.com/PabloDKx" class="txt-deco-m text-white me-4">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.google.com.ar/" class="txt-deco-m text-white me-4">
+                    <i class="bi bi-google"></i>
+                </a>
+                <a href="https://www.instagram.com/malec_velas/" class="txt-deco-m text-white me-4">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pablo-ochoa-0b9428301/" class="txt-deco-m text-white me-4">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/codeOchoa" class="txt-deco-m text-white me-4">
+                    <i class="bi bi-github"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center-m p-3">
+            <span>&copy;© 2024 Copyright: Malec. Todos los derechos reservados.</span>
+            <div>Defensa de las y los consumidores. Para reclamos
+                <a class="text-white" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank">ingrese aquí</a>
+            </div>
+            <a class="text-white" href="https://kissaccesorios.empretienda.com.ar/">Test</a>
+        </div>
     </footer>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/js/main.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
