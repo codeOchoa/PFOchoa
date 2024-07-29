@@ -1,5 +1,4 @@
-import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
-import "../../node_modules/aos/dist/aos.js";
+// import "";
 // import AOS from "aos";
 // import "../../node_modules/aos/dist/aos.css";
 
