@@ -6,8 +6,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/jquery.instagramFeed/3.0.4/jquery.instagramFeed.min.js");
-@import "./_core-plug.css";
-@import "./_style-plug.css";
+@import "_core-plug.css";
+@import "_style-plug.css";
 
 // Fonts
 
@@ -29,6 +29,44 @@ body {
     overflow-x: hidden;
     padding: 0;
     transition: background-color 0.5s, color 0.5s;
+}
+
+p {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.commonSelect:before {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.commonAccordion .panel .panel-title a:before,
+.commonAccordion-2 .panel .panel-title a:before {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.hero-slider .btn {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.hero-slider h1 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.widget.widget-category ul li a:before {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.contact-form .form-control {
+    font-family: "Josefin Sans", sans-serif;
 }
 
 // Widgets
@@ -118,6 +156,24 @@ body {
     color: #121212;
 }
 
+.media {
+    display: flex;
+}
+
+.btn-main {
+    &:hover {
+        .badge-m {
+            color: #FAFAFA;
+            background-color: #121212;
+        }
+    }
+}
+
+.badge-m {
+    color: #121212;
+    background-color: #FAFAFA;
+}
+
 // Navbar
 
 .navbar {
@@ -182,7 +238,7 @@ body {
     text-transform: uppercase;
     opacity: 1 !important;
     width: 117px;
-  }
+}
 
 .checkout-form .form-group input {
     border-radius: 0;
@@ -191,7 +247,7 @@ body {
     -moz-appearance: none;
     -webkit-appearance: none;
     height: 50px;
-  }
+}
 
 // Confirmation
 
