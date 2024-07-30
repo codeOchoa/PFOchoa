@@ -1,13 +1,13 @@
 {
     "title": "Malec",
     "name": "malec",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "scripts": {
         "build": "npm run clean && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build-css": "sass styles/main.scss assets/css/main.css",
+        "build-css": "sass assets/scss/main.scss assets/css/main.css",
         "clean": "node scripts/clean.js",
         "start": "npm run build && node scripts/start.js",
-        "watch-css": "sass --watch styles/main.scss:assets/css/main.css"
+        "watch-css": "sass --watch assets/scss/main.scss:assets/css/main.css"
     },
     "description": "A shop homepage HTML template built with Bootstrap",
     "keywords": [
@@ -30,7 +30,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/codeOchoa/PreEntrga2Ochoa"
+        "url": "https://github.com/codeOchoa/PreEntrga3Ochoa"
     },
     "dependencies": {
         "aos": "^3.0.0-beta.6",
