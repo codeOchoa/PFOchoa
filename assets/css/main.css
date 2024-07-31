@@ -65,10 +65,6 @@ h6 {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.scroll-top-widget {
-  display: none;
-}
-
 @media (max-width: 768px) {
   .scroll-top-widget {
     align-items: center;
@@ -78,7 +74,7 @@ h6 {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     color: #FAFAFA;
     cursor: pointer;
-    display: flex;
+    display: none;
     font-size: 1.5rem;
     height: 50px;
     justify-content: center;
@@ -87,7 +83,7 @@ h6 {
     text-decoration: none;
     transition: background-color 0.3s;
     width: 50px;
-    z-index: 1000;
+    z-index: 999;
   }
   .scroll-top-widget:hover {
     background-color: black;
@@ -110,7 +106,7 @@ h6 {
   text-decoration: none;
   transition: background-color 0.3s;
   width: 50px;
-  z-index: 999;
+  z-index: 998;
 }
 .whatsapp-widget:hover {
   background-color: #3ba135;
@@ -177,15 +173,9 @@ h6 {
   border: 1px solid #000000;
 }
 
-.dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0;
-  border-left: 0.3em solid transparent;
+.dropdown-menu {
+  border: 0 solid transparent;
+  border-radius: 0;
 }
 
 .navbar {

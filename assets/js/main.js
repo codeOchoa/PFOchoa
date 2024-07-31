@@ -31,10 +31,28 @@
 
 // });
 
-document.querySelector(".scroll-top-widget").addEventListener("click", function (event) {
-    event.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    var whatsappWidget = document.querySelector(".whatsapp-widget");
+    var scrollTopWidget = document.querySelector(".scroll-top-widget");
+
+    function toggleWidgets() {
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        var pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var scrollThreshold = pageHeight * 0.1; // 10% del total de la página
+
+        // Mostrar/ocultar el widget de "Volver al principio"
+        if (scrollPosition > scrollThreshold) {
+            scrollTopWidget.style.display = "flex";
+        } else {
+            scrollTopWidget.style.display = "none";
+        }
+    }
+
+    window.addEventListener("scroll", toggleWidgets);
+    toggleWidgets(); // Ejecutar una vez al cargar la página para comprobar la posición inicial
+
+    // Función para desplazarse al principio de la página
+    scrollTopWidget.onclick = function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 });
