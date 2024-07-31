@@ -6,8 +6,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/jquery.instagramFeed/3.0.4/jquery.instagramFeed.min.js");
-@import url("_core-plug.css");
-@import url("_style-plug.css");
+@import url("coreplug.css");
+@import url("styleplug.css");
 @font-face {
   font-family: "Josefin Sans";
   src: url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
