@@ -93,15 +93,9 @@ h6 {
     &:hover {
         background-color: darken($bg-color, 10%);
     }
-}
 
-// .scroll-top-widget {
-//     display: none;
-// }
-
-@media (max-width: 768px) {
-    .scroll-top-widget {
-        @include scroll-top-widget();
+    @media (max-width: 768px) {
+        display: flex;
     }
 }
 
@@ -172,6 +166,8 @@ h6 {
 .badge-m {
     color: #121212;
     background-color: #FAFAFA;
+    right: 0.5rem;
+    top: 0.5rem;
 }
 
 .form-control-m {
@@ -198,10 +194,11 @@ h6 {
     border: 1px solid #000000;
 }
 
-// Solo modificar de 767px para abajo en ancho para que entren 2 card en pantalla
-// .card-m   {
-//     width: 100px;
-// }
+@media (max-width: 768px) {
+    .card-m {
+      width: 40%;
+    }
+}
 
 .dropdown-menu {
     border: 0 solid transparent;

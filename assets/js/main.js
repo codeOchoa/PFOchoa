@@ -1,6 +1,6 @@
 // import "";
 // import AOS from "aos";
-// import "../../node_modules/aos/dist/aos.css";
+// import "./node_modules/aos/dist/aos.css";
 
 // const projectRoot = window.CSS.camelCase($project - root)
 
@@ -32,15 +32,13 @@
 // });
 
 document.addEventListener("DOMContentLoaded", function () {
-    var whatsappWidget = document.querySelector(".whatsapp-widget");
     var scrollTopWidget = document.querySelector(".scroll-top-widget");
 
     function toggleWidgets() {
         var scrollPosition = window.scrollY || document.documentElement.scrollTop;
         var pageHeight = document.documentElement.scrollHeight - window.innerHeight;
-        var scrollThreshold = pageHeight * 0.1; // 10% del total de la página
+        var scrollThreshold = pageHeight * 0.1;
 
-        // Mostrar/ocultar el widget de "Volver al principio"
         if (scrollPosition > scrollThreshold) {
             scrollTopWidget.style.display = "flex";
         } else {
@@ -49,9 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener("scroll", toggleWidgets);
-    toggleWidgets(); // Ejecutar una vez al cargar la página para comprobar la posición inicial
+    toggleWidgets();
 
-    // Función para desplazarse al principio de la página
     scrollTopWidget.onclick = function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
