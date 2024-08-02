@@ -3,10 +3,7 @@
     "name": "malec",
     "version": "0.1.1",
     "scripts": {
-        "build": "npm run clean && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build-css": "sass assets/scss/main.scss assets/css/main.css",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
         "watch-css": "sass --watch assets/scss/main.scss:assets/css/main.css"
     },
     "description": "A shop homepage HTML template built with Bootstrap",
