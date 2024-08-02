@@ -99,6 +99,10 @@ h6 {
     }
 }
 
+.scroll-top-widget {
+    @include scroll-top-widget();
+}
+
 @mixin whatsapp-widget($size: 50px, $bg-color: #4dc247, $icon-size: 1.5rem) {
     align-items: center;
     background-color: $bg-color;
@@ -126,6 +130,8 @@ h6 {
 .whatsapp-widget {
     @include whatsapp-widget();
 }
+
+// General
 
 .btn-main,
 .btn-small,
@@ -197,15 +203,24 @@ h6 {
     border: 1px solid #000000;
 }
 
-@media (max-width: 768px) {
-    .card-m {
-        width: 40%;
-    }
+.row-m > * {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
 }
 
 .dropdown-menu {
     border: 0 solid transparent;
     border-radius: 0;
+}
+
+.shadow-box-m {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-box-m:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 // Navbar
@@ -241,22 +256,6 @@ h6 {
 .text-center-m {
     background-color: rgba(0, 0, 0, 0.2);
 }
-
-// Index
-
-.shadow-box {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.shadow-box:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-// Cart
-
-
 
 // Checkout
 
