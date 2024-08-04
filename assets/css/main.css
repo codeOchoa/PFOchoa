@@ -8,6 +8,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/jquery.instagramFeed/3.0.4/jquery.instagramFeed.min.js");
 @import url("coreplug.css");
 @import url("styleplug.css");
+@import url("animateplug.css");
 @font-face {
   font-family: "Josefin Sans";
   src: url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
@@ -202,8 +203,32 @@ h6 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.navbar {
-  position: sticky !important;
+.content01 {
+  background: url("../img/carousel02.jpg") cover center center/no-repeat !important;
+  display: block !important;
+  height: 500px !important;
+  width: 100% !important;
+}
+
+.content02 {
+  background: url("../img/carousel02.jpg") cover center center/no-repeat !important;
+  display: block !important;
+  height: 500px !important;
+  width: 100% !important;
+}
+
+.content03 {
+  background: url("../img/carousel02.jpg") cover center center/no-repeat !important;
+  display: block !important;
+  height: 500px !important;
+  width: 100% !important;
+}
+
+.content04 {
+  background: url("../img/carousel02.jpg") cover center center/no-repeat !important;
+  display: block !important;
+  height: 500px !important;
+  width: 100% !important;
 }
 
 .navbar-brand {
