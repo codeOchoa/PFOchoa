@@ -4,7 +4,7 @@
 
 // const projectRoot = window.CSS.camelCase($project - root)
 
-// AOS.init();
+AOS.init();
 
 // You can also pass an optional settings object
 // below listed default settings
@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleWidgets();
 
     scrollTopWidget.onclick = function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     };
 });
