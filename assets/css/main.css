@@ -201,6 +201,47 @@ h6 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.productd-m {
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: center;
+}
+
+.carousel-m {
+  margin-top: 3.95em;
+}
+
+.parraph-m {
+  color: var(--bs-heading-color);
+  font-size: calc(1.5rem + 1.5vw);
+  font-weight: 300 !important;
+}
+
+.title-m {
+  color: var(--bs-heading-color);
+  font-size: calc(3rem + 1.5vw);
+  font-weight: 500;
+}
+
+.navbar-m {
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.navbar-m.fixed {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: -50;
+  z-index: 1030;
+}
+
+.navbar-m.visible {
+  top: 0;
+}
+
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
@@ -275,6 +316,10 @@ h6 {
 .logo-m {
   height: auto;
   width: 128px;
+}
+
+#awards-m {
+  filter: brightness(0) saturate(100%) invert(66%) sepia(39%) saturate(235%) hue-rotate(11deg) brightness(97%) contrast(91%) drop-shadow(0 0 0.1rem rgba(18, 18, 18, 0.25));
 }
 
 .team-img {
